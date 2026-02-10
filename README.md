@@ -31,8 +31,6 @@ Zephyr exists to make modding:
 > If something here doesn’t match what 0.1 currently does, please open an Issue.  
 > The README and reality should not drift like continents.
 
-## Workflow
-
  ## Install
 
 ### From source
@@ -51,7 +49,7 @@ Zephyr exists to make modding:
 **Binary**
  - On the way, I promise
 
- ## Quick start
+ ## Workflow Quick start
 
 **1) Create a workspace and set the modding directory**
   - zephyr (interactive)
