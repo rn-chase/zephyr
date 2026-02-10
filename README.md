@@ -31,6 +31,84 @@ Zephyr exists to make modding:
 > If something here doesn’t match what 0.1 currently does, please open an Issue.  
 > The README and reality should not drift like continents.
 
+## Workflow
+
+ ## Install
+
+### From source
+
+**Requirements**
+- Rust (stable)
+- A standard build toolchain for your distro
+- `git`
+
+**Build**
+git clone https://github.com/rn-chase/zephyr.git
+cd zephyr
+cargo build --release
+./target/release/zephyr --help
+
+### From release tarball
+
+ - sha256sum -c zephyr-0.1.0-linux-x86_64.tar.gz.sha256
+ - tar -xzf zephyr-0.1.0-linux-x86_64.tar.gz
+ - chmod +x zephyr
+ - ./zephyr --help
+
+**Optional (install to PATH)**
+ - mkdir -p ~/.local/bin
+ - mv zephyr ~/.local/bin/
+ - zephyr --help
+
+ ## Quick start
+
+**1) Create a workspace and set the modding directory**
+  - zephyr (interactive)
+    
+    *or*
+    
+  - zephyr --workspace <game> init --modding-dir /path/to/mods --force (explicit)
+  
+**2) Add a mod**
+ - zephyr --workspace <game> add /path/to/mod --id <mymod>
+
+**3) Check status**
+ - zephyr --workspace <game> list
+
+**4) Deploy (preview first)**
+ - zephyr --workspace <game> deploy --dry-run
+ - zephyr --workspace <game> deploy
+
+**5) Undo deploy (safe)**
+ - zephyr --workspace <game> undeploy <mymod> --dry-run
+ - zephyr --workspace <game> undeploy <mymod>
+
+**6) Disable / Enable**
+ - zephyr --workspace <game> disable <mymod>
+ - zephyr --workspace <game> enable <mymod>
+
+**7) Remove from staging**
+ - zephyr --workspace <game> remove <mymod> (if disabled)
+ - zephyr --workspace <game> remove <mymod> --force (if enabled)
+
+## Folder layout
+
+Zephyr stores workspaces under UUID folders internally, but you refer to them by friendly workspace IDs.
+
+~/.zephyr/index.json (workspace registry)
+
+~/.zephyr/workspaces/<uuid>/
+
+  - config.toml
+
+   - mods/
+
+   - mods/.disabled/
+
+   - deploy/receipts/
+
+   -  sparks/ (reserved)
+
 ## What’s next
 
 These are the next priorities after 0.1. No dates, just direction:
@@ -49,19 +127,3 @@ These are the next priorities after 0.1. No dates, just direction:
 - Nexus integration
 - Windows/Mac support
 - Stability guarantees across 0.x releases (for the curious and bold alike)
-
-## Install
-
-### From source
-
-**Requirements**
-- Rust (stable)
-- A standard build toolchain for your distro
-- `git`
-
-**Build**
-```bash
-git clone https://github.com/rn-chase/zephyr.git
-cd zephyr
-cargo build --release
-./target/release/zephyr --help
