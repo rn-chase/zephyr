@@ -48,17 +48,8 @@ Zephyr exists to make modding:
  - cargo build --release
  - ./target/release/zephyr --help
 
-### From release tarball
-
- - sha256sum -c zephyr-0.1.0-linux-x86_64.tar.gz.sha256
- - tar -xzf zephyr-0.1.0-linux-x86_64.tar.gz
- - chmod +x zephyr
- - ./zephyr --help
-
-**Optional (install to PATH)**
- - mkdir -p ~/.local/bin
- - mv zephyr ~/.local/bin/
- - zephyr --help
+**Binary**
+ - On the way, I promise
 
  ## Quick start
 
