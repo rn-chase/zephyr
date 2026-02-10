@@ -43,10 +43,10 @@ Zephyr exists to make modding:
 - `git`
 
 **Build**
-git clone https://github.com/rn-chase/zephyr.git
-cd zephyr
-cargo build --release
-./target/release/zephyr --help
+ - git clone https://github.com/rn-chase/zephyr.git
+ - cd zephyr
+ - cargo build --release
+ - ./target/release/zephyr --help
 
 ### From release tarball
 
@@ -127,3 +127,13 @@ These are the next priorities after 0.1. No dates, just direction:
 - Nexus integration
 - Windows/Mac support
 - Stability guarantees across 0.x releases (for the curious and bold alike)
+
+## Copyright
+ - Zephyr
+ - Nate Chase (C) 2026
+
+## License
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
