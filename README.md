@@ -1,5 +1,10 @@
 # Zephyr
 
+**PSA:**
+**This is essentially a capstone project for learning Rust, but that doesn't mean it's not a serious project I want to actually want to create.
+It works, and more features are being added as I learn more.
+If that doesn't scare you off, I hope you enjoy it. If you do get some value out of Zephy's use, I hope you're willing to stick around and see Zephyr grow.**
+
 **A game-agnostic mod manager for Linux** that tries its hardest to make modding reliable, fixable, and tidy, without fighting your games (or your sanity).
 
 > Status: **0.1 (early release)**  
