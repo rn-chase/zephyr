@@ -1,7 +1,7 @@
 # Zephyr
 
 **PSA:**
-**This is essentially a capstone project for learning Rust, but that doesn't mean it's not a serious project I want to actually want to create.
+**This is essentially my capstone project for learning Rust, but that doesn't mean it's not a serious project that I want to actually want to make real.
 It works, and more features are being added as I learn more.
 If that doesn't scare you off, I hope you enjoy it. If you do get some value out of Zephy's use, I hope you're willing to stick around and see Zephyr grow.**
 
