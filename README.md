@@ -1,5 +1,24 @@
 # Zephyr
 
+> [!WARNING]
+> **Zephyr is temporarily archived.** Public development is paused while I review legal and compliance risk related to California AB 1043. The project is not abandoned.
+
+## Current status
+
+Zephyr is in temporary hibernation.
+
+I am pausing public development and archiving this repository while I work through legal and compliance concerns related to California AB 1043 and figure out the least chaotic path forward.
+
+This project is **not dead**, and it is **not abandoned**. I still believe in it. I am simply not willing to keep pushing forward publicly while there is unresolved risk that could seriously harm a one-person project.
+
+As an individual developer, even a small chance of major legal or financial exposure is not something I can responsibly ignore.
+
+I would rather pause, reassess, and return with firmer footing than make reckless decisions and put the project at risk.
+
+Thank you to everyone who has taken an interest in Zephyr so far. I intend to return to it when I can do so more safely and responsibly.
+
+For now, consider this a hibernation, not an obituary.
+
 **PSA:**
 **This is essentially my capstone project for learning Rust, but that doesn't mean it's not a serious project that I want to actually want to make real.
 It works, and more features are being added as I learn more.
